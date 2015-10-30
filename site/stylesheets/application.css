@@ -60,8 +60,8 @@
       max-width: 250px;
       cursor: url(../images/cursor-lightbox.svg), auto; } }
   .main img.large-img {
-    max-width: 600px;
-    width: 80%; }
+    max-width: 700px;
+    width: 90%; }
   .main img.medium-img {
     max-width: 500px;
     width: 80%; }
