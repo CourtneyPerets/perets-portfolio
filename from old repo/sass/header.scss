@@ -1,0 +1,106 @@
+// header.scss
+
+.header {
+  background: #fffcf6;
+  display: inline-block;
+  position: relative; 
+  width: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    animation: none;
+    height: 100%;
+    width: 25%;
+  }
+  
+  &__logo {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      bottom: 2vh;
+      left: 2vh;
+      right: auto;
+      top: auto;
+      height: 10vh;
+      width: auto;
+      display: block;
+      position: absolute;
+    }
+  }
+
+  nav {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: inline-block;
+      height: 80vh;
+      margin-top: 10vh;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    li {
+      margin-bottom: 9px;
+      border-left: 8px solid #fffcf6;
+
+      &.project-one:hover {
+        border-left: 8px solid $project-one-main;
+      }
+
+      &.project-two:hover {
+        border-left: 8px solid $project-two-main;
+      }
+
+      &.project-three:hover {
+        border-left: 8px solid $project-three-main;
+      }
+
+      &.project-four:hover {
+        border-left: 8px solid $project-four-main;
+      }
+
+      &.project-five:hover {
+        border-left: 8px solid $project-five-main;
+      }
+
+      &.project-six:hover {
+        border-left: 8px solid $project-six-main;
+      }  
+
+      &.project-seven:hover {
+        border-left: 8px solid $project-seven-main;
+      }
+
+      &.project-eight:hover {
+        border-left: 8px solid $project-eight-main;
+      }
+
+      &.project-nine:hover {
+        border-left: 8px solid $project-nine-main;
+      }
+
+      &.project-ten:hover {
+        border-left: 8px solid $project-ten-main;
+      }
+
+      &.project-eleven:hover {
+        border-left: 8px solid $project-eleven-main;
+      }            
+    }
+
+    .no-border {
+      border-left: 0;
+
+      &:hover {
+        border-left: 0;
+      }
+
+      h2, a {
+        padding-left: 22px;
+      }
+    }
+  }
+}

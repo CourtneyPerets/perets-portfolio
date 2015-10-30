@@ -1,0 +1,222 @@
+// intro.scss
+
+.intro {
+	background: #fffcf6;
+	height: 100%;
+	width: 100%;
+
+
+	h2 {
+		display: none;
+
+		@media screen and (min-width: 768px) {
+			display: inline-block;
+			position: absolute;
+			font-size: 85px;
+			cursor: pointer;
+			top: 75px;
+			left: 50px;
+			text-transform: lowercase;
+
+			a {
+				text-decoration: underline;
+				font-size: 30px;
+				text-transform: capitalize;
+			}
+
+			&.resume {
+				top: 300px;
+				left: 100px;
+
+				@media screen and (min-width: 1300px) {
+					left: 400px;
+				}
+			}
+
+			&.work {
+				top: 200px;
+				left: 300px;
+				
+				@media screen and (min-width: 1200px) {
+					left: 500px;
+				}				
+			}
+		}
+	}
+
+	&__container {
+		padding: 20px;
+
+		&__image-logo {
+		  display: inline-block;
+		  margin-top: 30vh;
+		  width: 100px;
+
+		  @media screen and (min-width: 768px) {
+			  bottom: 50px;
+			  left: 50px;
+			  position: absolute;
+			  width: 100px;	  	
+			  -webkit-transform: scale(1);
+			  -webkit-transition: 1s ease-out;
+			  z-index: -1;
+			  cursor: pointer;
+
+			  &:hover {
+			  	transform: scale(2);
+			  	-webkit-transform: scale(2);
+			  	-webkit-transition: 1s ease-in;
+			  }
+		  }	
+		}
+
+		&__image-portrait {
+		  display: none;
+
+		  @media screen and (min-width: 768px) {
+			  bottom: 50px;
+			  display: block;
+			  position: absolute;
+			  right: 100px;
+			  width: 300px;
+			  cursor: pointer;
+		  }
+
+		  @media screen and (min-width: 1200px) {
+		  	width: 475px;
+		  }
+		}		
+
+		&__content {
+			margin-top: 20px;
+
+			@media screen and (min-width: 768px) {
+				margin: 0;
+			}
+		}
+
+		&__container {
+			@media screen and (min-width: 768px) {
+				position: absolute;
+				top: 175px;
+				right: 50px;
+			}
+
+			@media screen and (min-width: 1200px) {
+				top: 100px;
+			}
+		}
+	}
+
+	.title {
+		position: absolute;
+		font-size: 40px;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 15px;
+		font-style: normal;
+		left: auto;
+		margin: 5px 0 0;
+		position: relative;
+		text-align: left;
+		text-transform: none;
+		top: auto;
+		transform: none;
+
+		@media screen and (min-width: 768px) {
+			overflow: hidden;
+			text-align: left;
+			transition: .4s ease-in-out;    
+			width: 100%;
+		}
+
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	a {
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+
+	.hide {
+
+		@media screen and (min-width: 768px) {
+  			display: none;
+		}
+
+		&-mobile {
+			display: none;
+
+			@media screen and (min-width: 768px) {
+				display: block;
+			}
+
+			img {
+				width: 50px;
+			}
+
+			img.developer {
+				width: 70px;
+			}
+
+
+			p,
+			a {
+				display: none;
+				transition: .2s ease-in-out;
+			}
+
+			section {
+				position: absolute;
+
+				img {
+					cursor: pointer;
+				}
+
+				&.magnify {
+					top: 400px;
+
+					@media screen and (min-width: 768px) {
+						left: 200px;
+					}
+				}
+
+				&.beach {
+					top: 550px;
+					left: 300px;
+				}
+
+				&.developer {
+					top: 175px;
+
+					a:hover {
+						letter-spacing: 3px;
+						transition: .2s ease-in-out;
+					}
+				}
+			}
+
+			.show {
+				display: block;
+				
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+
+	&.beachy-background {
+		background: url('../../images/intro/beachBackground.jpg') no-repeat center;
+		background-size: cover;
+	}
+}
+
+
+

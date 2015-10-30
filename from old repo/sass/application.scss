@@ -1,0 +1,146 @@
+// application.scss
+
+// Variables
+$headerline01: 'Apercu Regular', sans-serif, serif;
+$headerline02: 'Apercu Regular', sans-serif, serif;
+$body-font: 'Apercu Mono';
+$link-color: #000;
+
+// Imports
+@import 'animations';
+@import 'main';
+@import 'modal';
+@import 'header';
+@import 'intro';
+
+// Fonts
+@font-face {
+  font-family: 'Apercu Mono';
+  src: url('../../fonts/apercu_mono.otf');
+}
+
+@font-face {
+  font-family: 'Apercu Regular';
+  src: url('../../fonts/apercuRegular.otf');
+}
+
+// Global
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  -webkit-transform: translate(0, -50%);
+  font-family: $body-font;
+  font-style: italic;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: lowercase;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 5%;
+  width: 90%;
+
+  @media screen and (min-width: 768px) {
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  &::before {
+    background: #000;
+    content: '';
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    top: -30px;
+    transform: translate(-50%, 0);
+    width: 80px;
+  }
+
+  &::after {
+    background: #000;
+    content: '';
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    bottom: -30px;
+    transform: translate(-50%, 0);
+    width: 80px;
+  }  
+}
+
+h2 {
+  font-family: $body-font;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 0 0 5px 10px;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    font-size: 15px;
+  }
+}
+
+h3 {
+  font-family: $body-font;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 0 0 0 10px;
+  word-wrap: break-word;
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }  
+}
+
+h4 {
+  background: #000;
+  display: inline-block;
+  font-family: $headerline02;  
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 2px 8px 3px;
+  text-transform: uppercase;
+}
+
+h5 {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    background: #000;
+    display: inline-block;
+    font-family: $headerline02;  
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 10px 10px 0 0;
+  }
+}
+
+p {
+  font-family: $body-font;
+  font-size: 14px;
+  padding: 15px 0 0;
+  line-height: 22px;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  font-family: $body-font;
+  color: $link-color;
+  display: inline-block;
+  text-decoration: underline;
+  padding: 0 5px;
+}
+
+li {
+  list-style: none;	
+}
