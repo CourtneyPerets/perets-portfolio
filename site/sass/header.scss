@@ -1,0 +1,123 @@
+// header.scss
+
+.page-two {
+  // styling for page 2 in main.scss
+  .header {
+    background: #fffcf6;
+    display: inline-block;
+    position: relative; 
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      animation: none;
+      height: 100%;
+      width: 25%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    &__logo {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        bottom: 2vh;
+        left: 2vh;
+        right: auto;
+        top: auto;
+        height: 10vh;
+        width: auto;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    nav {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        height: 80vh;
+        margin-top: 10vh;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      li {
+        margin-bottom: 9px;
+        border-left: 8px solid #fffcf6;
+
+        &.active.project-one,
+        &.project-one:hover {
+          border-left: 8px solid $project-one-main;
+        }
+
+        &.active.project-two,
+        &.project-two:hover {
+          border-left: 8px solid $project-two-main;
+        }
+
+        &.active.project-three,
+        &.project-three:hover {
+          border-left: 8px solid $project-three-main;
+        }
+
+        &.active.project-four,
+        &.project-four:hover {
+          border-left: 8px solid $project-four-main;
+        }
+
+        &.active.project-five,
+        &.project-five:hover {
+          border-left: 8px solid $project-five-main;
+        }
+
+        &.active.project-six,
+        &.project-six:hover {
+          border-left: 8px solid $project-six-main;
+        }  
+
+        &.active.project-seven,
+        &.project-seven:hover {
+          border-left: 8px solid $project-seven-main;
+        }
+
+        &.active.project-eight,
+        &.project-eight:hover {
+          border-left: 8px solid $project-eight-main;
+        }
+
+        &.active.project-nine,
+        &.project-nine:hover {
+          border-left: 8px solid $project-nine-main;
+        }
+
+        &.active.project-ten,
+        &.project-ten:hover {
+          border-left: 8px solid $project-ten-main;
+        }
+
+        &.active.project-eleven,
+        &.project-eleven:hover {
+          border-left: 8px solid $project-eleven-main;
+        }            
+      }
+
+      .no-border {
+        border-left: 0;
+
+        &:hover {
+          border-left: 0;
+        }
+
+        h2, a {
+          padding-left: 22px;
+        }
+      }
+    }
+  }
+}

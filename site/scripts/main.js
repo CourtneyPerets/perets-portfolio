@@ -3,10 +3,10 @@ $(function() {
         if($(window).width() > 768) {
             makeScrollTos();
             makeProjectNavWork();
-            makeProjectNavUpdateWithScrolling()
-            preventCarousel();
-            moveCarousel();
-            changeCursor();
+            // makeProjectNavUpdateWithScrolling()
+            // preventCarousel();
+            // moveCarousel();
+            // changeCursor();
             showModal();
             hideModal();
             disableScroll();
@@ -14,7 +14,7 @@ $(function() {
     }
 
     function makeProjectNavUpdateWithScrolling() {
-        return 
+        return
         var waypoint = new Waypoint({
             element: $('#projectOne'),
             handler: function() {
@@ -25,29 +25,23 @@ $(function() {
     }
 
     function makeProjectNavWork() {
-        $("header nav li a").on("click", function() {
-            $("header nav li").siblings().removeClass("active");
+        $("header nav li.project-nav a").on("click", function() {
+            $("header nav li.project-nav").siblings().removeClass("active");
             $(this).parents("li").addClass("active");
         })
     }
 
     function makeScrollTos() {
-        $(".scrolltoproject").on("click", function(e) {
-
-            var targetSelector = ".main " + $(this).attr("href");
-            console.log(targetSelector);
-            var targetY = $(targetSelector).offset().top - $("#projectOne").offset().top;
-
+        $(".jumptoproject").on("click", function(e) {
             e.preventDefault();
-
-            TweenLite.to($(".main"), 0.5, {scrollTo:{y: targetY}, ease:Power2.easeInOut});
+            jumpProject( $(this).data("project") ); // jumpProject() is over in the ace-two-axis-slideshow file
         })
 
         $(".scrolltotop").on("click", function(e) {
 
-            e.preventDefault();
+           e.preventDefault();
 
-            TweenLite.to(window, 0.5, {scrollTo:{y: 0}, ease:Power2.easeInOut});
+           TweenLite.to(window, 0.5, {scrollTo:{y: 0}, ease:Power2.easeInOut});
         })
 
         $(".scrolltobottom").on("click", function(e) {
