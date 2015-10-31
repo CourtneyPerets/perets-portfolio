@@ -27,8 +27,54 @@ $project-eleven-main:    #FF617F; // Logos
     height: 100vh;
     // background: red;
 
+    .edge {
+      position: absolute;
+      // border: 1px solid red;
+
+      &.edge-top,
+      &.edge-bottom {
+        height: 20%;
+        width: 100%;
+      }
+      &.edge-left,
+      &.edge-right {
+        width: 20%;
+        height: 100%;
+      }
+      &.edge-top {
+        top: 0;
+        left: 0;
+      }
+      &.edge-bottom {
+        bottom: 0;
+        left: 0;
+      }
+      &.edge-left {
+        top: 0;
+        left: 0;
+      }
+      &.edge-right {
+        top: 0;
+        right: 0;
+      }
+    }
+
     .main {
       background: #fffcf6;
+
+      .edge {
+        // border: 1px solid blue;
+        z-index: 10;
+        &.edge-top,
+        &.edge-bottom {
+          height: 80px;
+        }
+        &.edge-left,
+        &.edge-right {
+          width: 80px;
+          z-index: 11;
+        }
+      }
 
       &::-webkit-scrollbar {
         display: none;
@@ -81,6 +127,7 @@ $project-eleven-main:    #FF617F; // Logos
         @media screen and (min-width: 768px) {
           position: absolute;
           top: 0;
+          // left: 0;
           width: 100%;
           height: 100%;
         }

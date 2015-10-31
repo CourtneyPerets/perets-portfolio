@@ -9,8 +9,35 @@
     width: 75%;
     margin-left: 25%;
     height: 100vh; }
+    .page-two .project-window .edge {
+      position: absolute; }
+      .page-two .project-window .edge.edge-top, .page-two .project-window .edge.edge-bottom {
+        height: 20%;
+        width: 100%; }
+      .page-two .project-window .edge.edge-left, .page-two .project-window .edge.edge-right {
+        width: 20%;
+        height: 100%; }
+      .page-two .project-window .edge.edge-top {
+        top: 0;
+        left: 0; }
+      .page-two .project-window .edge.edge-bottom {
+        bottom: 0;
+        left: 0; }
+      .page-two .project-window .edge.edge-left {
+        top: 0;
+        left: 0; }
+      .page-two .project-window .edge.edge-right {
+        top: 0;
+        right: 0; }
     .page-two .project-window .main {
       background: #fffcf6; }
+      .page-two .project-window .main .edge {
+        z-index: 10; }
+        .page-two .project-window .main .edge.edge-top, .page-two .project-window .main .edge.edge-bottom {
+          height: 80px; }
+        .page-two .project-window .main .edge.edge-left, .page-two .project-window .main .edge.edge-right {
+          width: 80px;
+          z-index: 11; }
       .page-two .project-window .main::-webkit-scrollbar {
         display: none; }
       @media screen and (min-width: 768px) {
@@ -367,28 +394,33 @@ html {
         overflow-x: hidden; } }
     .page-two .header nav li {
       margin-bottom: 9px;
-      border-left: 8px solid #fffcf6; }
-      .page-two .header nav li.active.project-one, .page-two .header nav li.project-one:hover {
+      border-left: 8px solid transparent;
+      transition: all 0.2s; }
+      .page-two .header nav li a {
+        width: 100%; }
+      .page-two .header nav li:hover {
+        border-left: 8px solid rgba(0, 0, 0, 0.2); }
+      .page-two .header nav li.active.project-one {
         border-left: 8px solid #bfa4ff; }
-      .page-two .header nav li.active.project-two, .page-two .header nav li.project-two:hover {
+      .page-two .header nav li.active.project-two {
         border-left: 8px solid #4eadff; }
-      .page-two .header nav li.active.project-three, .page-two .header nav li.project-three:hover {
+      .page-two .header nav li.active.project-three {
         border-left: 8px solid #ebf900; }
-      .page-two .header nav li.active.project-four, .page-two .header nav li.project-four:hover {
+      .page-two .header nav li.active.project-four {
         border-left: 8px solid #86f0e2; }
-      .page-two .header nav li.active.project-five, .page-two .header nav li.project-five:hover {
+      .page-two .header nav li.active.project-five {
         border-left: 8px solid #fff373; }
-      .page-two .header nav li.active.project-six, .page-two .header nav li.project-six:hover {
+      .page-two .header nav li.active.project-six {
         border-left: 8px solid #76ffbc; }
-      .page-two .header nav li.active.project-seven, .page-two .header nav li.project-seven:hover {
+      .page-two .header nav li.active.project-seven {
         border-left: 8px solid #ffa663; }
-      .page-two .header nav li.active.project-eight, .page-two .header nav li.project-eight:hover {
+      .page-two .header nav li.active.project-eight {
         border-left: 8px solid #ffc59f; }
-      .page-two .header nav li.active.project-nine, .page-two .header nav li.project-nine:hover {
+      .page-two .header nav li.active.project-nine {
         border-left: 8px solid #5cc5ff; }
-      .page-two .header nav li.active.project-ten, .page-two .header nav li.project-ten:hover {
+      .page-two .header nav li.active.project-ten {
         border-left: 8px solid #aaff24; }
-      .page-two .header nav li.active.project-eleven, .page-two .header nav li.project-eleven:hover {
+      .page-two .header nav li.active.project-eleven {
         border-left: 8px solid #ff244d; }
     .page-two .header nav .no-border {
       border-left: 0; }

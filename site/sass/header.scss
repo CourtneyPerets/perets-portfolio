@@ -49,60 +49,69 @@
 
       li {
         margin-bottom: 9px;
-        border-left: 8px solid #fffcf6;
+        border-left: 8px solid transparent;
+        transition: all 0.2s;
 
-        &.active.project-one,
-        &.project-one:hover {
+        a {
+          width: 100%;
+        }
+
+        &:hover {
+          border-left: 8px solid rgba(0,0,0,0.2);
+        }
+
+        &.active.project-one {//,
+        // &.project-one:hover {
           border-left: 8px solid darken( $project-one-main, 12%);
         }
 
-        &.active.project-two,
-        &.project-two:hover {
+        &.active.project-two {//,
+        //&.project-two:hover {
           border-left: 8px solid darken( $project-two-main, 12%);
         }
 
-        &.active.project-three,
-        &.project-three:hover {
+        &.active.project-three {//,
+        //&.project-three:hover {
           border-left: 8px solid darken( $project-three-main, 30%);
         }
 
-        &.active.project-four,
-        &.project-four:hover {
+        &.active.project-four {//,
+        //&.project-four:hover {
           border-left: 8px solid darken( $project-four-main, 12%);
         }
 
-        &.active.project-five,
-        &.project-five:hover {
+        &.active.project-five {//,
+        //&.project-five:hover {
           border-left: 8px solid darken( $project-five-main, 12%);
         }
 
-        &.active.project-six,
-        &.project-six:hover {
+        &.active.project-six {//,
+        //&.project-six:hover {
           border-left: 8px solid darken( $project-six-main, 12%);
         }  
 
-        &.active.project-seven,
-        &.project-seven:hover {
+        &.active.project-seven {//,
+        //&.project-seven:hover {
           border-left: 8px solid darken( $project-seven-main, 12%);
         }
 
-        &.active.project-eight,
-        &.project-eight:hover {
+        &.active.project-eight {//,
+        //&.project-eight:hover {
           border-left: 8px solid darken( $project-eight-main, 12%);
         }
 
-        &.active.project-nine,
-        &.project-nine:hover {
+        &.active.project-nine {//,
+        //&.project-nine:hover {
           border-left: 8px solid darken( $project-nine-main, 12%);
         }
 
-        &.active.project-ten,
-        &.project-ten:hover {
+        &.active.project-ten {//,
+        //&.project-ten:hover {
           border-left: 8px solid darken( $project-ten-main, 12%);
         }
 
-        &.active.project-eleven,
-        &.project-eleven:hover {
+        &.active.project-eleven {//,
+        //&.project-eleven:hover {
           border-left: 8px solid darken( $project-eleven-main, 12%);
         }            
       }
