@@ -22,6 +22,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/images\/arrow-down.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1354,
+		"inputAbbreviatedPath": "\/images\/arrow-down.png",
+		"outputAbbreviatedPath": "\/images\/arrow-down.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/arrow-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1332,
+		"inputAbbreviatedPath": "\/images\/arrow-left.png",
+		"outputAbbreviatedPath": "\/images\/arrow-left.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/arrow-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1379,
+		"inputAbbreviatedPath": "\/images\/arrow-right.png",
+		"outputAbbreviatedPath": "\/images\/arrow-right.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/arrow-up.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1349,
+		"inputAbbreviatedPath": "\/images\/arrow-up.png",
+		"outputAbbreviatedPath": "\/images\/arrow-up.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/ben-howard\/benHoward01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
