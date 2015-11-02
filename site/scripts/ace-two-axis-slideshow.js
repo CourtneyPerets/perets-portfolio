@@ -62,6 +62,15 @@ $(document).ready(function(){
 		console.log("jumpProject", num);
 
 		var $oldProject = $projects.eq( $container.data("project") );
+
+		if (parseInt($container.data("project")) == parseInt(num) - 1) {
+			console.log("jump to same project!");
+			TweenMax.to($oldProject, 0.1, {top: "-3%"});
+			TweenMax.to($oldProject, 0.15, {delay: 0.1, top: "3%"});
+			TweenMax.to($oldProject, 0.1, {delay: 0.25, top: "0%"});
+			return;
+		}
+
 		TweenMax.to($oldProject, TRANSITION_TIME, {top: "-100%"});
 
 
@@ -98,7 +107,7 @@ $(document).ready(function(){
 		console.log("change group to ", $project.data("group"));
 		updateProjectNav();
 	}
-	
+
 
 	var nextGroup = function() {
 		var $project = $projects.eq( $container.data("project") );
