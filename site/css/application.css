@@ -20,19 +20,19 @@
       .page-two .project-window .edge.edge-top {
         top: 0;
         left: 0;
-        cursor: n-resize; }
+        cursor: url("../images/arrow-up.png"), n-resize; }
       .page-two .project-window .edge.edge-bottom {
         bottom: 0;
         left: 0;
-        cursor: s-resize; }
+        cursor: url("../images/arrow-down.png"), s-resize; }
       .page-two .project-window .edge.edge-left {
         top: 0;
         left: 0;
-        cursor: w-resize; }
+        cursor: url("../images/arrow-left.png"), w-resize; }
       .page-two .project-window .edge.edge-right {
         top: 0;
         right: 0;
-        cursor: e-resize; }
+        cursor: url("../images/arrow-right.png"), e-resize; }
     .page-two .project-window .main {
       overflow: hidden;
       background: #fffcf6; }
