@@ -151,7 +151,7 @@ $(document).ready(function(){
 	window.nextProject = nextProject;
 	window.jumpProject = jumpProject;
 
-	$(window).on("keyup", function(e) {
+	$(window).on("keydown", function(e) {
 		console.log(e.keyCode);
 		
 		// 38 up
@@ -163,12 +163,16 @@ $(document).ready(function(){
 
 		if (e.keyCode == 38) {
 			prevProject();
+			return false;
 		} else if (e.keyCode == 40) {
 			nextProject();
+			return false;
 		} else if (e.keyCode == 37) {
 			prevGroup();
+			return false;
 		} else if (e.keyCode == 39) {
 			nextGroup();
+			return false;
 		}
 	})
 
