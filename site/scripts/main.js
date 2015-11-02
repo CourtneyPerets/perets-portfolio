@@ -9,7 +9,7 @@ $(function() {
             // changeCursor();
             showModal();
             hideModal();
-            disableScroll();
+            //disableScroll();
         }        
     }
 

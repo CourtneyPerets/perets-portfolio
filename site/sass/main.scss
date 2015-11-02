@@ -44,23 +44,46 @@ $project-eleven-main:    #FF617F; // Logos
       &.edge-top {
         top: 0;
         left: 0;
+        cursor: n-resize;
       }
       &.edge-bottom {
         bottom: 0;
         left: 0;
+        cursor: s-resize;
       }
       &.edge-left {
         top: 0;
         left: 0;
+        cursor: w-resize;
       }
       &.edge-right {
         top: 0;
         right: 0;
+        cursor: e-resize;
       }
     }
 
     .main {
+      overflow: hidden;
       background: #fffcf6;
+
+      .dots {
+        z-index: 10;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        div {
+          display: inline-block;
+          background-color: black;
+          width: 10px;
+          height: 10px;
+          margin: 0 8px; 
+          border-radius: 10px;
+          box-shadow: 0 0 30px rgba(255,255,255,1);
+        }
+      }
 
       .edge {
         // border: 1px solid blue;

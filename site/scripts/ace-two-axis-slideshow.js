@@ -13,7 +13,7 @@ $(document).ready(function(){
 		$(this).data("group", 0);
 	})
 
-	console.log($projects.first().find(".carousel .group").first());
+	// console.log($projects.first().find(".carousel .group").first());
 
 	TweenMax.to($projects.first().find(".carousel .group").first(), TRANSITION_TIME, {left: "0%"});	
 
@@ -96,7 +96,9 @@ $(document).ready(function(){
 		TweenMax.fromTo($newGroup, TRANSITION_TIME, {left: "-100%"}, {left: "0%"});
 
 		console.log("change group to ", $project.data("group"));
+		updateProjectNav();
 	}
+	
 
 	var nextGroup = function() {
 		var $project = $projects.eq( $container.data("project") );
@@ -113,11 +115,25 @@ $(document).ready(function(){
 		TweenMax.fromTo($newGroup, TRANSITION_TIME, {left: "100%"}, {left: "0%"});
 
 		console.log("change group to ", $project.data("group"));
+		updateProjectNav();
 	}
 
 	var updateProjectNav = function() {
 		$(".page-two .header li").removeClass("active").eq( $container.data("project") + 1 ).addClass("active");
+		
+		$(".dots div").hide();
+
+		var $project = $projects.eq( $container.data("project") );
+		var $groups = $project.find(".carousel .group");
+		console.log($groups.length);
+		for (var i = 0; i < $groups.length; i++) {
+			$(".dots div").eq(i).show().css("opacity", 0.25);
+			if (i == $project.data("group")) {
+				$(".dots div").eq(i).css("opacity", 1);
+			}
+		};
 	}
+
 
 	window.prevGroup = prevGroup;
 	window.nextGroup = nextGroup;
@@ -147,6 +163,12 @@ $(document).ready(function(){
 		}
 	})
 
+	$(".edge-top").on("click", prevProject);
+	$(".edge-bottom").on("click", nextProject);
+	$(".edge-right").on("click", nextGroup);
+	$(".edge-left").on("click", prevGroup);
+
+	updateProjectNav();
 
 });
 
