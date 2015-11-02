@@ -123,8 +123,9 @@
       @media screen and (min-width: 768px) {
         .page-two .project-window .main img {
           width: 60%;
-          max-width: 250px;
-          cursor: url(../images/cursor-lightbox.svg), auto; } }
+          max-width: 250px; } }
+      .page-two .project-window .main img.modalify {
+        cursor: url(../images/cursor-lightbox.svg), auto; }
       .page-two .project-window .main img.large-img {
         max-width: 600px;
         width: 80%; }

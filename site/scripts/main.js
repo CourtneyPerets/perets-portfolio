@@ -137,11 +137,12 @@ $(function() {
 
     function showModal() {
         $('.modalify').on('click', function(event){
-
-            var $imgSrc = $(this).attr('src');
+            var imgSrc = $(this).attr('src');
+            
+            console.log("make a modal!", imgSrc);
             
             $('.modal').removeClass('white');
-            $('.modalized').attr('src', $imgSrc);
+            $('.modalized').attr('src', imgSrc);
             $('.modal').addClass('show');
 
             event.preventDefault;

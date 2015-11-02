@@ -201,7 +201,10 @@ $project-eleven-main:    #FF617F; // Logos
         @media screen and (min-width: 768px) {
           width: 60%;
           max-width: 250px;
-          cursor: url(../images/cursor-lightbox.svg), auto
+        }
+
+        &.modalify {
+          cursor: url(../images/cursor-lightbox.svg), auto;
         }
 
         &.large-img {

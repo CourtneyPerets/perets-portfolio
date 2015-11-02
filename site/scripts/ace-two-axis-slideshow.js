@@ -20,7 +20,7 @@ $(document).ready(function(){
 
 	var prevProject = function() {
 		var $oldProject = $projects.eq( $container.data("project") );
-		TweenMax.to($oldProject, TRANSITION_TIME, {top: "100%"});
+		TweenMax.to($oldProject, TRANSITION_TIME, {top: "100%", zIndex: 5});
 
 		$container.data("project", $container.data("project") - 1);
 		if ($container.data("project") == -1) {
@@ -28,19 +28,18 @@ $(document).ready(function(){
 		}
 
 		var $newProject = $projects.eq( $container.data("project") );
-		$newProject.data("group", 0);
 		var $firstGroup = $newProject.find(".carousel .group").eq(0);
 		TweenMax.to($firstGroup, 0, {left: "0%"});
-		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "-100%"}, {delay: 0.1, top: "0%"});
+		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "-100%"}, {delay: 0.1, top: "0%", zIndex: 8});
 
 		console.log("change project to ", $container.data("project"));
-
+		jumpGroup(1, true);
 		updateProjectNav();
 	}
 
 	var nextProject = function() {
 		var $oldProject = $projects.eq( $container.data("project") );
-		TweenMax.to($oldProject, TRANSITION_TIME, {top: "-100%"});
+		TweenMax.to($oldProject, TRANSITION_TIME, {top: "-100%", zIndex: 5});
 
 		$container.data("project", $container.data("project") + 1);
 		if ($container.data("project") >= $projects.length) {
@@ -48,12 +47,12 @@ $(document).ready(function(){
 		}
 
 		var $newProject = $projects.eq( $container.data("project") );
-		$newProject.data("group", 0);
 		var $firstGroup = $newProject.find(".carousel .group").eq(0);
 		TweenMax.to($firstGroup, 0, {left: "0%"});
-		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "100%"}, {delay: 0.1, top: "0%"});
+		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "100%"}, {delay: 0.1, top: "0%", zIndex: 8});
 
 		console.log("change project to ", $container.data("project"));
+		jumpGroup(1, true);
 		updateProjectNav();
 	}
 
@@ -71,17 +70,17 @@ $(document).ready(function(){
 			return;
 		}
 
-		TweenMax.to($oldProject, TRANSITION_TIME, {top: "-100%"});
+		TweenMax.to($oldProject, TRANSITION_TIME, {top: "-100%", zIndex: 5});
 
 
 		$container.data("project", parseInt(num) - 1);
 		
 		var $newProject = $projects.eq( $container.data("project") );
-		$newProject.data("group", 0);
 		var $firstGroup = $newProject.find(".carousel .group").eq(0);
 		TweenMax.to($firstGroup, 0, {left: "0%"});
-		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "100%"}, {delay: 0.3, top: "0%"});
+		TweenMax.fromTo($newProject, TRANSITION_TIME, {top: "100%"}, {delay: 0.3, top: "0%", zIndex: 8});
 
+		jumpGroup(1, true);
 		console.log("change project to ", $container.data("project"));
 		updateProjectNav();
 		
@@ -127,6 +126,28 @@ $(document).ready(function(){
 		updateProjectNav();
 	}
 
+
+	var jumpGroup = function(num, instant) {
+		var time = TRANSITION_TIME;
+		if (instant) time = 0;
+
+		var $project = $projects.eq( $container.data("project") );
+		var $oldGroup = $project.find(".carousel .group").eq( $project.data("group") );
+
+		TweenMax.to($oldGroup, time, {left: "-100%"});
+
+		$project.data("group", parseInt(num) - 1);
+
+		var $newGroup = $project.find(".carousel .group").eq( $project.data("group") );
+		TweenMax.fromTo($newGroup, time, {left: "100%"}, {left: "0%"});
+
+		console.log("change group to ", $project.data("group"));
+		updateProjectNav();
+	}
+
+
+
+
 	var updateProjectNav = function() {
 		$(".page-two .header li").removeClass("active").eq( $container.data("project") + 1 ).addClass("active");
 		
@@ -146,6 +167,7 @@ $(document).ready(function(){
 
 	window.prevGroup = prevGroup;
 	window.nextGroup = nextGroup;
+	window.jumpGroup = jumpGroup;
 
 	window.prevProject = prevProject;
 	window.nextProject = nextProject;
