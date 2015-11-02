@@ -67,24 +67,6 @@ $project-eleven-main:    #FF617F; // Logos
       overflow: hidden;
       background: #fffcf6;
 
-      .dots {
-        z-index: 10;
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        div {
-          display: inline-block;
-          background-color: black;
-          width: 10px;
-          height: 10px;
-          margin: 0 8px; 
-          border-radius: 10px;
-          box-shadow: 0 0 30px rgba(255,255,255,1);
-        }
-      }
-
       .edge {
         // border: 1px solid blue;
         z-index: 10;

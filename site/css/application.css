@@ -36,21 +36,6 @@
     .page-two .project-window .main {
       overflow: hidden;
       background: #fffcf6; }
-      .page-two .project-window .main .dots {
-        z-index: 10;
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        width: 100%;
-        text-align: center; }
-        .page-two .project-window .main .dots div {
-          display: inline-block;
-          background-color: black;
-          width: 10px;
-          height: 10px;
-          margin: 0 8px;
-          border-radius: 10px;
-          box-shadow: 0 0 30px white; }
       .page-two .project-window .main .edge {
         z-index: 10; }
         .page-two .project-window .main .edge.edge-top, .page-two .project-window .main .edge.edge-bottom {
@@ -422,6 +407,24 @@ html {
         width: 100%; }
       .page-two .header nav li:hover {
         border-left: 8px solid rgba(0, 0, 0, 0.2); }
+      .page-two .header nav li .dots {
+        display: none;
+        margin-left: 15px; }
+        .page-two .header nav li .dots a {
+          display: inline-block;
+          margin: -2px 2px;
+          width: 16px;
+          cursor: pointer;
+          margin-left: -3px; }
+          .page-two .header nav li .dots a span {
+            display: inline-block;
+            background-color: black;
+            width: 7px;
+            height: 7px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px white; }
+      .page-two .header nav li.active .dots {
+        display: block; }
       .page-two .header nav li.active.project-one {
         border-left: 8px solid #bfa4ff; }
       .page-two .header nav li.active.project-two {

@@ -13,6 +13,20 @@ $(document).ready(function(){
 		$(this).data("group", 0);
 	})
 
+	$("nav .project-nav").each(function() {
+		var projectSelector = $(this).find("a").attr("href");
+		var groupCount = $(projectSelector).find(".group").length;
+		$(this).append("<div class='dots'></div>");
+		for (var i = 0; i < groupCount; i++) {
+			$(this).find(".dots").append("<a><span></span></a>");
+		};
+		$(this).find(".dots a").each(function(i,e) {
+			$(this).on("click", function() {
+				jumpGroup(i + 1);
+			});
+		})
+	})
+
 	// console.log($projects.first().find(".carousel .group").first());
 
 	TweenMax.to($projects.first().find(".carousel .group").first(), TRANSITION_TIME, {left: "0%"});	
@@ -151,17 +165,9 @@ $(document).ready(function(){
 	var updateProjectNav = function() {
 		$(".page-two .header li").removeClass("active").eq( $container.data("project") + 1 ).addClass("active");
 		
-		$(".dots div").hide();
-
 		var $project = $projects.eq( $container.data("project") );
-		var $groups = $project.find(".carousel .group");
-		console.log($groups.length);
-		for (var i = 0; i < $groups.length; i++) {
-			$(".dots div").eq(i).show().css("opacity", 0.25);
-			if (i == $project.data("group")) {
-				$(".dots div").eq(i).css("opacity", 1);
-			}
-		};
+
+		$("nav li.active .dots a").css("opacity", 0.2).eq( $project.data("group") ).css("opacity", 1);
 	}
 
 
@@ -202,6 +208,7 @@ $(document).ready(function(){
 	$(".edge-bottom").on("click", nextProject);
 	$(".edge-right").on("click", nextGroup);
 	$(".edge-left").on("click", prevGroup);
+
 
 	updateProjectNav();
 

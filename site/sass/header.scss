@@ -64,6 +64,34 @@
           border-left: 8px solid rgba(0,0,0,0.2);
         }
 
+        .dots {
+          display: none;
+          margin-left: 15px;
+          a {
+            display: inline-block;
+            margin: -2px 2px; 
+            width: 16px;
+            cursor: pointer;
+            // background-color: red;
+            margin-left: -3px;
+
+            span {
+              display: inline-block;
+              background-color: black;
+              width: 7px;
+              height: 7px;
+              border-radius: 10px;
+              box-shadow: 0 0 30px rgba(255,255,255,1);
+            }
+          }
+        }
+
+        &.active {
+          .dots {
+            display: block;
+          }
+        }
+
         &.active.project-one {//,
         // &.project-one:hover {
           border-left: 8px solid darken( $project-one-main, 12%);
