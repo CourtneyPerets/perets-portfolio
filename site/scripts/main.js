@@ -32,11 +32,7 @@ $(function() {
     }
 
     function makeScrollTos() {
-        $(".jumptoproject").on("click", function(e) {
-            e.preventDefault();
-            jumpProject( $(this).data("project") ); // jumpProject() is over in the ace-two-axis-slideshow file
-        })
-
+       
         $(".scrolltotop").on("click", function(e) {
 
            e.preventDefault();
@@ -136,6 +132,8 @@ $(function() {
 
 
     function showModal() {
+        if (isMobile()) return;
+
         $('.modalify').on('click', function(event){
             var imgSrc = $(this).attr('src');
             
@@ -150,6 +148,8 @@ $(function() {
     } 
 
     function hideModal() {
+        if (isMobile()) return;
+        
         $('.modal').on('click', function(event) {
             $('.modal').removeClass('show');
         });

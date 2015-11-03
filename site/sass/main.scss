@@ -22,14 +22,21 @@ $project-eleven-main:    #FF617F; // Logos
 
   .project-window {
     position: relative;
-    width: 75%;
-    margin-left: 25%;
     height: 100vh;
     // background: red;
+    @media screen and (min-width: 768px) {
+      width: 75%;
+      margin-left: 25%;
+    }
 
     .edge {
       position: absolute;
       // border: 1px solid red;
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
 
       &.edge-top,
       &.edge-bottom {
@@ -66,24 +73,8 @@ $project-eleven-main:    #FF617F; // Logos
     .main {
       overflow: hidden;
       background: #fffcf6;
-
-      .edge {
-        // border: 1px solid blue;
-        z-index: 10;
-        &.edge-top,
-        &.edge-bottom {
-          height: 80px;
-        }
-        &.edge-left,
-        &.edge-right {
-          width: 80px;
-          z-index: 11;
-        }
-      }
-
-      &::-webkit-scrollbar {
-        display: none;
-      }  
+      // border: 1px solid red;
+      position: relative;
 
       @media screen and (min-width: 768px) {
         position: absolute;
@@ -103,7 +94,23 @@ $project-eleven-main:    #FF617F; // Logos
         // background: blue;
       }
 
+      .edge {
+        // border: 1px solid blue;
+        z-index: 10;
+        &.edge-top,
+        &.edge-bottom {
+          height: 80px;
+        }
+        &.edge-left,
+        &.edge-right {
+          width: 80px;
+          z-index: 11;
+        }
+      }
 
+      &::-webkit-scrollbar {
+        display: none;
+      }  
 
       h1 {
         font-family: $headerline01;
@@ -128,19 +135,53 @@ $project-eleven-main:    #FF617F; // Logos
         }
       }
 
+
+
       .main__project {
+        // border: 1px solid blue;
+        position: relative;
+        display: block;
         @media screen and (min-width: 768px) {
           position: absolute;
           top: 0;
           // left: 0;
           width: 100%;
           height: 100%;
+          display: none;
+        }
+
+        nav {
+          float: right;
+          @media screen and (min-width: 768px) {
+            display: none;
+          }
+          a {
+            display: inline-block;
+            font-size: 20pt;
+            text-decoration: none;
+            padding: 4px 15px;
+          }
         }
 
         .carousel {
           .group {
             position: absolute;
-            left: 100%;
+            display: none;
+            width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: 767px) { // MOBILE
+              left: 100%;
+              &:nth-child(1) {
+                left: 0;
+                display: block;
+              }
+            }
+            @media screen and (min-width: 768px) {
+              //display: inline-block;
+              left: 100%;
+            }
+
           }
         }
 
@@ -183,10 +224,9 @@ $project-eleven-main:    #FF617F; // Logos
         @media screen and (min-width: 768px) {
           width: 60%;
           max-width: 250px;
-        }
-
-        &.modalify {
-          cursor: url(../images/cursor-lightbox.svg), auto;
+          &.modalify {
+            cursor: url(../images/cursor-lightbox.svg), auto;
+          }
         }
 
         &.large-img {
@@ -536,11 +576,18 @@ $project-eleven-main:    #FF617F; // Logos
         }
 
         li {
+          position: relative;
           float: left;
           height: 350px;
+          width: 100%;
           overflow: hidden;
           -webkit-transform-style: preserve-3d;
-          -webkit-transform: translate3d(0,0,0);         
+          -webkit-transform: translate3d(0,0,0);
+          &.no-mobile {
+            @media screen and (max-width: 767px) { // MOBILE
+              display: none;
+            }
+          }
         }
 
     // CLASSES TO CONTROL POSITIONING
@@ -567,9 +614,7 @@ $project-eleven-main:    #FF617F; // Logos
           }
 
           .group {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
+            
           }
         }     
       } 
