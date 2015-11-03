@@ -40,7 +40,7 @@ $(document).ready(function(){
 	// console.log($projects.first().find(groupClass).first());
 
 	$projects.first().show();
-	TweenMax.to($projects.first().find(groupClass).first(), TRANSITION_TIME, {left: "0%"});	
+	TweenMax.to($projects.first().find(groupClass).first(), TRANSITION_TIME, {left: "0%", display: "block"});	
 	
 
 	var prevProject = function() {
