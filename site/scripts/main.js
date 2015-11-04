@@ -157,7 +157,7 @@ $(function() {
 
 
     init();
-    var groupWidth = $('.group').width();
-    var halfWay = groupWidth / 2;
+    //var groupWidth = $('.group').width();
+    //var halfWay = groupWidth / 2;
 
 });

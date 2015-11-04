@@ -1,7 +1,7 @@
 (function() {
   
   var names = ['Courtney Perets', 'Coatney', 'Coats', 'C-Peasy', 'Shortney'];
-  var images = ['images/intro/profPic01.jpg', ' images/intro/profPic02.jpg', 'images/intro/profPic03.jpg', 'images/intro/profPic04.jpg'];
+  var images = ['images/intro/profpic01.jpg', ' images/intro/profpic02.jpg', 'images/intro/profpic03.jpg', 'images/intro/profpic04.jpg'];
        
   function init() {
     rearrangeName();

@@ -153,46 +153,46 @@
       .page-two .project-window .main__project-one h5 {
         color: #eae1ff; }
       .page-two .project-window .main__project-one li.main__project-one__one {
-        background: url("../../images/sok/sok01.jpg") no-repeat center;
+        background: url("../images/sok/sok01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-one li.main__project-one__two {
         background: #eae1ff; }
       .page-two .project-window .main__project-one li.main__project-one__four {
-        background: url("../../images/sok/sok02.gif") no-repeat center;
+        background: url("../images/sok/sok02.gif") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-one li.main__project-one__five {
-        background: url("../../images/sok/sok03.gif") no-repeat center;
+        background: url("../images/sok/sok03.gif") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-one li.main__project-one__six {
-        background: url("../../images/sok/sok04.gif") no-repeat center;
+        background: url("../images/sok/sok04.gif") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-one li.main__project-one__seven {
-        background: url("../../images/sok/sok05.gif") no-repeat center;
+        background: url("../images/sok/sok05.gif") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-one li.main__project-one__eight {
-        background: url("../../images/sok/sok07.gif") no-repeat center;
+        background: url("../images/sok/sok07.gif") no-repeat center;
         background-size: cover; }
       @media screen and (max-width: 768px) {
         .page-two .project-window .main__project-one li.main__project-one__four {
-          background: url("../../images/sok/mobile/sok02.gif") no-repeat center;
+          background: url("../images/sok/mobile/sok02.gif") no-repeat center;
           background-size: cover; }
         .page-two .project-window .main__project-one li.main__project-one__five {
-          background: url("../../images/sok/mobile/sok03.gif") no-repeat center;
+          background: url("../images/sok/mobile/sok03.gif") no-repeat center;
           background-size: cover; }
         .page-two .project-window .main__project-one li.main__project-one__six {
-          background: url("../../images/sok/mobile/sok04.gif") no-repeat center;
+          background: url("../images/sok/mobile/sok04.gif") no-repeat center;
           background-size: cover; }
         .page-two .project-window .main__project-one li.main__project-one__seven {
-          background: url("../../images/sok/mobile/sok05.gif") no-repeat center;
+          background: url("../images/sok/mobile/sok05.gif") no-repeat center;
           background-size: cover; }
         .page-two .project-window .main__project-one li.main__project-one__eight {
-          background: url("../../images/sok/mobile/sok07.gif") no-repeat center;
+          background: url("../images/sok/mobile/sok07.gif") no-repeat center;
           background-size: cover; } }
       .page-two .project-window .main__project-two h4,
       .page-two .project-window .main__project-two h5 {
         color: #8bc9ff; }
       .page-two .project-window .main__project-two li.main__project-two__one {
-        background: url("../../images/parallel/parallel01.jpg") no-repeat center;
+        background: url("../images/parallel/parallel01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-two li.main__project-two__two {
         background: #8bc9ff; }
@@ -200,7 +200,7 @@
       .page-two .project-window .main__project-three h5 {
         color: #f9ff93; }
       .page-two .project-window .main__project-three li.main__project-three__one {
-        background: url("../../images/songsOfFreedom/songsOfFreedom01.jpg") no-repeat center;
+        background: url("../images/songsOfFreedom/songsOfFreedom01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-three li.main__project-three__two {
         background: #f9ff93; }
@@ -208,41 +208,41 @@
       .page-two .project-window .main__project-four h5 {
         color: #bdf7ef; }
       .page-two .project-window .main__project-four li.main__project-four__one {
-        background: url("../../images/voodudes/voodudes01.jpg") no-repeat center;
+        background: url("../images/voodudes/voodudes01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-four li.main__project-four__two {
         background: #bdf7ef; }
       .page-two .project-window .main__project-four li.main__project-four__three {
-        background: url("../../images/voodudes/voodudes02.jpg") no-repeat center;
+        background: url("../images/voodudes/voodudes02.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-four li.main__project-four__four {
-        background: url("../../images/voodudes/voodudes03.gif") no-repeat center;
+        background: url("../images/voodudes/voodudes03.gif") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-four li.main__project-four__five {
-        background: url("../../images/voodudes/voodudes04.jpg") no-repeat center;
+        background: url("../images/voodudes/voodudes04.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-four li.main__project-four__seven {
-        background: url("../../images/voodudes/voodudes06.jpg") no-repeat center;
+        background: url("../images/voodudes/voodudes06.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-five h4,
       .page-two .project-window .main__project-five h5 {
         color: #fff8b0; }
       .page-two .project-window .main__project-five li.main__project-five__one {
-        background: url("../../images/ben-howard/benHoward01.jpg") no-repeat center;
+        background: url("../images/ben-howard/benHoward01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-five li.main__project-five__two {
         background: #fff8b0; }
       .page-two .project-window .main__project-five li.main__project-five__five {
-        background: url("../../images/ben-howard/benHoward03.jpg") no-repeat center;
+        background: url("../images/ben-howard/benHoward03.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-five li.main__project-five__six {
-        background: url("../../images/ben-howard/benHoward05.jpg") no-repeat center;
+        background: url("../images/ben-howard/benHoward05.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-six h4,
       .page-two .project-window .main__project-six h5 {
         color: #b3ffda; }
       .page-two .project-window .main__project-six li.main__project-six__one {
-        background: url("../../images/mall/mall01.jpg") no-repeat center;
+        background: url("../images/mall/mall01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-six li.main__project-six__two {
         background: #b3ffda; }
@@ -250,44 +250,44 @@
       .page-two .project-window .main__project-seven h5 {
         color: #ffc9a0; }
       .page-two .project-window .main__project-seven li.main__project-seven__one {
-        background: url("../../images/whataburger/whataburger01.jpg") no-repeat center;
+        background: url("../images/whataburger/whataburger01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-seven li.main__project-seven__two {
         background: #ffc9a0; }
       .page-two .project-window .main__project-seven li.main__project-seven__seven {
-        background: url("../../images/whataburger/whataburger02.jpg") no-repeat center;
+        background: url("../images/whataburger/whataburger02.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-seven li.main__project-seven__twelve {
-        background: url("../../images/whataburger/whataburger07.jpg") no-repeat center;
+        background: url("../images/whataburger/whataburger07.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight h4,
       .page-two .project-window .main__project-eight h5 {
         color: #ffeadc; }
       .page-two .project-window .main__project-eight li.main__project-eight__one {
-        background: url("../../images/card/card01.jpg") no-repeat center;
+        background: url("../images/card/card01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight li.main__project-eight__two {
         background: #ffeadc; }
       .page-two .project-window .main__project-eight li.main__project-eight__three {
-        background: url("../../images/card/card02.jpg") no-repeat center;
+        background: url("../images/card/card02.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight li.main__project-eight__four {
-        background: url("../../images/card/card03.jpg") no-repeat center;
+        background: url("../images/card/card03.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight li.main__project-eight__five {
-        background: url("../../images/card/card04.jpg") no-repeat center;
+        background: url("../images/card/card04.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight li.main__project-eight__six {
-        background: url("../../images/card/card05.jpg") no-repeat center;
+        background: url("../images/card/card05.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-eight li.main__project-eight__seven {
-        background: url("../../images/card/card06.jpg") no-repeat center;
+        background: url("../images/card/card06.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-nine h4,
       .page-two .project-window .main__project-nine h5 {
         color: #99dbff; }
       .page-two .project-window .main__project-nine li.main__project-nine__one {
-        background: url("../../images/marta/marta01.jpg") no-repeat center;
+        background: url("../images/marta/marta01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-nine li.main__project-nine__two {
         background: #99dbff; }
@@ -295,7 +295,7 @@
       .page-two .project-window .main__project-ten h5 {
         color: #c2ff61; }
       .page-two .project-window .main__project-ten li.main__project-ten__one {
-        background: url("../../images/alice/alice01.jpg") no-repeat center;
+        background: url("../images/alice/alice01.jpg") no-repeat center;
         background-size: cover; }
       .page-two .project-window .main__project-ten li.main__project-ten__two {
         background: #c2ff61; }
@@ -640,15 +640,15 @@ html {
       .intro .hide-mobile .show a {
         display: block; }
   .intro.beachy-background {
-    background: url("../../images/intro/beachBackground.jpg") no-repeat center;
+    background: url("../images/intro/beachBackground.jpg") no-repeat center;
     background-size: cover; }
 
 @font-face {
   font-family: 'Apercu Mono';
-  src: url("../../fonts/apercu_mono.otf"); }
+  src: url("../fonts/apercu_mono.otf"); }
 @font-face {
   font-family: 'Apercu Regular';
-  src: url("../../fonts/apercuRegular.otf"); }
+  src: url("../fonts/apercuRegular.otf"); }
 * {
   box-sizing: border-box;
   margin: 0;

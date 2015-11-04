@@ -250,19 +250,21 @@ $(document).ready(function(){
 		// 40 down
 		// 37 left
 		// 39 right
-		
-		e.preventDefault();
 
 		if (e.keyCode == 38) {
+			e.preventDefault();
 			prevProject();
 			return false;
 		} else if (e.keyCode == 40) {
+			e.preventDefault();
 			nextProject();
 			return false;
 		} else if (e.keyCode == 37) {
+			e.preventDefault();
 			prevGroup();
 			return false;
 		} else if (e.keyCode == 39) {
+			e.preventDefault();
 			nextGroup();
 			return false;
 		}
