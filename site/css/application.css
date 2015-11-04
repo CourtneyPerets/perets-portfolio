@@ -100,23 +100,23 @@
             font-size: 20pt;
             text-decoration: none;
             padding: 4px 15px; }
-        .page-two .project-window .main .main__project .carousel .group,
-        .page-two .project-window .main .main__project .carousel .group-mobile {
+        .page-two .project-window .main .main__project .carousel .slide-desktop,
+        .page-two .project-window .main .main__project .carousel .slide-mobile {
           position: absolute;
           display: none;
           width: 100%;
           height: 100%; }
           @media screen and (max-width: 767px) {
-            .page-two .project-window .main .main__project .carousel .group,
-            .page-two .project-window .main .main__project .carousel .group-mobile {
+            .page-two .project-window .main .main__project .carousel .slide-desktop,
+            .page-two .project-window .main .main__project .carousel .slide-mobile {
               left: 100%; }
-              .page-two .project-window .main .main__project .carousel .group:nth-child(1),
-              .page-two .project-window .main .main__project .carousel .group-mobile:nth-child(1) {
+              .page-two .project-window .main .main__project .carousel .slide-desktop:nth-child(1),
+              .page-two .project-window .main .main__project .carousel .slide-mobile:nth-child(1) {
                 left: 0;
                 display: block; } }
           @media screen and (min-width: 768px) {
-            .page-two .project-window .main .main__project .carousel .group,
-            .page-two .project-window .main .main__project .carousel .group-mobile {
+            .page-two .project-window .main .main__project .carousel .slide-desktop,
+            .page-two .project-window .main .main__project .carousel .slide-mobile {
               left: 100%; } }
         .page-two .project-window .main .main__project .main__project__content-container {
           padding: 20px; }

@@ -8,8 +8,8 @@ $(document).ready(function(){
 
 	var TRANSITION_TIME = 0.6;
 
-	var groupClass = ".group";
-	if (isMobile()) groupClass = ".group-mobile";
+	var groupClass = ".slide-desktop";
+	if (isMobile()) groupClass = ".slide-mobile";
 	
 	var $container = $(".page-two .main");
 	$container.data("project", 0);
