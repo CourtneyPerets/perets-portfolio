@@ -89,9 +89,9 @@ $(document).ready(function(){
 
 		if (parseInt($container.data("project")) == parseInt(num) - 1) {
 			console.log("jump to same project!");
-			TweenMax.to($oldProject, 0.1, {top: "-3%"});
-			TweenMax.to($oldProject, 0.15, {delay: 0.1, top: "3%"});
-			TweenMax.to($oldProject, 0.1, {delay: 0.25, top: "0%"});
+			TweenMax.to($oldProject, 0.1, {y: "-50px", ease: Quad.easeInOut});
+			TweenMax.to($oldProject, 0.15, {delay: 0.1, y: "30px", ease: Quad.easeInOut});
+			TweenMax.to($oldProject, 0.1, {delay: 0.25, y: "0", ease: Quad.easeInOut});
 			return;
 		}
 
