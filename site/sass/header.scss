@@ -25,10 +25,13 @@
       display: none;
 
       @media screen and (min-width: 768px) {
+        bottom: 2%;
+        left: 2%;
         bottom: 2vh;
         left: 2vh;
         right: auto;
         top: auto;
+        height: 10%;
         height: 10vh;
         width: auto;
         display: block;
