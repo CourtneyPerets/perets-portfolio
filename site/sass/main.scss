@@ -545,7 +545,21 @@ $project-eleven-main:    #FF617F; // Logos
         li.main__project-ten__two{
           background: $project-ten-main;
         }                
-      }          
+      } 
+
+
+
+    // PROJECT ELEVEN
+      &__project-eleven {
+        @media screen and (max-width: 767px) {
+          img {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: 100% !important;
+          }
+        }
+      }         
 
       .carousel {
         overflow-x: hidden;
@@ -592,6 +606,7 @@ $project-eleven-main:    #FF617F; // Logos
             }
           }
         }
+
 
     // CLASSES TO CONTROL POSITIONING
         @media screen and (min-width: 768px) {
