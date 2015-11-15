@@ -251,51 +251,51 @@ $project-eleven-main:    #FF617F; // Logos
           color: $project-one-main;
         }
 
-        li.main__project-one__one {
-          background: url('../images/sok/sok01.jpg') no-repeat center;
-          background-size: cover;
-        }
+        // li.main__project-one__one {
+        //   background: url('../images/sok/sok01.jpg') no-repeat center;
+        //   background-size: cover;
+        // }
 
-        li.main__project-one__two {
-          background: $project-one-main;
-        }
+        // li.main__project-one__two {
+        //   background: $project-one-main;
+        // }
 
 
-        li.main__project-one__four {
-          background: url('../images/sok/sok02.gif') no-repeat center;
-          background-size: cover;
-        } 
+        // li.main__project-one__four {
+        //   background: url('../images/sok/sok02.gif') no-repeat center;
+        //   background-size: cover;
+        // } 
 
-        li.main__project-one__five {
-          background: url('../images/sok/sok03.gif') no-repeat center;
-          background-size: cover;
-        } 
+        // li.main__project-one__five {
+        //   background: url('../images/sok/sok03.gif') no-repeat center;
+        //   background-size: cover;
+        // } 
 
-        li.main__project-one__six {
-          background: url('../images/sok/sok04.gif') no-repeat center;
-          background-size: cover;
-        } 
+        // li.main__project-one__six {
+        //   background: url('../images/sok/sok04.gif') no-repeat center;
+        //   background-size: cover;
+        // } 
 
-        li.main__project-one__seven {
-          background: url('../images/sok/sok05.gif') no-repeat center;
-          background-size: cover;
-        }   
+        // li.main__project-one__seven {
+        //   background: url('../images/sok/sok05.gif') no-repeat center;
+        //   background-size: cover;
+        // }   
 
-        li.main__project-one__eight {
-          background: url('../images/sok/sok07.gif') no-repeat center;
-          background-size: cover;
-        }  
-
+        // li.main__project-one__eight {
+        //   background: url('../images/sok/sok07.gif') no-repeat center;
+        //   background-size: cover;
+        // }  
         @media screen and (max-width: 768px) {
+
           li.main__project-one__four {
             background: url('../images/sok/mobile/sok02.gif') no-repeat center;
             background-size: cover;
           } 
 
-          li.main__project-one__five {
-            background: url('../images/sok/mobile/sok03.gif') no-repeat center;
-            background-size: cover;
-          } 
+          // li.main__project-one__five {
+          //   background: url('../images/sok/mobile/sok03.gif') no-repeat center;
+          //   background-size: cover;
+          // } 
 
           li.main__project-one__six {
             background: url('../images/sok/mobile/sok04.gif') no-repeat center;

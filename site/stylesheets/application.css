@@ -67,7 +67,8 @@
     width: 80%; }
   .main__project-one h4, .main__project-one h5 {
     color: #eae1ff; }
-  .main__project-one li.main__project-one__one {
+
+/*  .main__project-one li.main__project-one__one {
     background: url('../images/sok/sok01.jpg') no-repeat center;
     background-size: cover; }
   .main__project-one li.main__project-one__two {
@@ -87,10 +88,11 @@
   .main__project-one li.main__project-one__eight {
     background: url('../images/sok/sok07.gif') no-repeat center;
     background-size: cover; }
+
   @media screen and (max-width: 768px) {
     .main__project-one li.main__project-one__four {
       background: url('../images/sok/mobile/sok02.gif') no-repeat center;
-      background-size: cover; }
+      background-size: auto; }
     .main__project-one li.main__project-one__five {
       background: url('../images/sok/mobile/sok03.gif') no-repeat center;
       background-size: cover; }
@@ -102,7 +104,8 @@
       background-size: cover; }
     .main__project-one li.main__project-one__eight {
       background: url('../images/sok/mobile/sok07.gif') no-repeat center;
-      background-size: cover; } }
+      background-size: cover; } }*/
+      
   .main__project-two h4, .main__project-two h5 {
     color: #8bc9ff; }
   .main__project-two li.main__project-two__one {
